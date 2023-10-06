@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2</title>
+</head>
+<body>
+    <div id="root">
+        <h1>Отзывы о товарах</h1>
+        <div id="goods">
+            <div id="apple">
+                <h2>Apple iPhone 13</h2>
+            </div>
+            <div id="samsung">
+                <h2>Samsung Galaxy Z Fold 3</h2>
+            </div>
+            <div id="sony">
+                <h2>Sony PlayStation 5</h2>
+            </div>
+        </div>
+        <div>
+            <h2>Новый отзыв</h2>
+            <form id="form" action="#">
+                Apple iPhone 13<input type="radio" name="choice" id="good" value="apple" required><br>
+                Samsung Galaxy Z Fold 3<input type="radio" name="choice" id="good" value="samsung" required><br>
+                Sony PlayStation 5<input type="radio" name="choice" id="good" value="sony" required><br>
+                <input id="author" type="text" placeholder="Введите ваше имя"><br>
+                <input id="review" type="text" placeholder="Напишите отзыв">
+                <button id="btn">Опубликовать</button>
+            </form>
+        </div>
+    </div>
+    <script src="taskone.js"></script>
+    <script src="tasktwo.js"></script>
+</body>
+</html>
