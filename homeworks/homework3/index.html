@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 3</title>
+</head>
+
+<body>
+    <h1>Главная</h1>
+    <a href="./reviews.html">Посмотреть отзывы</a>
+    <a href="./new_review.html">Добавить отзыв к товару</a>
+    <script type="module">
+        import { saveDataToLS } from './utils.js';
+
+        // стартовые данные
+        // так как у нас имитация, то каждый раз при переключении
+        // на index.html данные обнуляются к исходным
+        const initialData = [
+            {
+                product: "Apple iPhone 13",
+                reviews: [
+                    {
+                        id: "1",
+                        author: "Author 1",
+                        text: "Отличный телефон! Батарея держится долго.",
+                    },
+                    {
+                        id: "2",
+                        author: "Author 2",
+                        text: "Камера супер, фото выглядят просто потрясающе.",
+                    },
+                ],
+            },
+            {
+                product: "Samsung Galaxy Z Fold 3",
+                reviews: [
+                    {
+                        id: "3",
+                        author: "Author 3",
+                        text: "Интересный дизайн, но дорогой.",
+                    },
+                ],
+            },
+            {
+                product: "Sony PlayStation 5",
+                reviews: [
+                    {
+                        id: "4",
+                        author: "Author 4",
+                        text: "Люблю играть на PS5, графика на высоте.",
+                    },
+                ],
+            },
+            {
+                product: "unknown", // Товар без начальных отзывов
+                reviews: [],
+            },
+        ];
+
+        // Сохраняем данные в local storage 
+        saveDataToLS('productReviews', initialData);
+    </script>
+</body>
+
+</html>
