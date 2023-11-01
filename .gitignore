@@ -2,6 +2,7 @@
 node_modules
 /dist
 lessons
+config.js
 
 
 # local env files
