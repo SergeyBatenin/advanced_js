@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 6</title>
-    <style>
-        .photo {
-            margin: 10px;
-            border: 1px solid #ccc;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Фотография на сегодня</h1>
-    <div>
-        <img class="photo"
-            src="https://images.unsplash.com/photo-1697660488130-a082c0ab5b2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MjMyMjZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTg4NTU4NzF8&ixlib=rb-4.0.3&q=80&w=400"
-            alt="тут будет фотка">
-
-        <p>Автор: </p>
-        <p>Понравилось: </p>
-        <button>Like!</button>
+    <div id="root" class="main_div">
+        <div class="day_photo">
+            <h1>Фотография на <span class="date"></span></h1>
+            <img class="photo" src="" alt="фото дня">
+            <div class="photo_info">
+                <p>Автор: <span class="author"></span></p>
+                <div class="like_div">
+                    <p>Понравилось: <span class="like_count">0</span>
+                    </p>
+                    <img id="notLike" class="like_btn" src="./like.png" alt="кнопка Лайка">
+                </div>
+            </div>
+        </div>
+        <div class="history_photo">
+            <p class="more_photos">Посмотреть фотографии за прошедшие дни</p>
+            <div class="past_photos"></div>
+        </div>
     </div>
     <script src="config.js"></script>
     <script src="main.js"></script>

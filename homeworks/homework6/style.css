@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_div {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.photo {
+    margin: 16px 0px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.like_div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.like_btn {
+    cursor: pointer;
+    width: 32px;
+    height: auto;
+}
+
+.history_photo {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more_photos {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.past_photos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
